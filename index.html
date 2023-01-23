@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" type="" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    
+    <!--Move to up bottom-->
+      <div class="scroll-button">
+        <a href="#header"><i class="fas fa-arrow-up"></i></a>
+      </div>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/IITG_logo.png" class="logo" style="height: 150px; width: 150px; margin: 20px -6px;">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#code" >Coding</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>STUDENT</p>
+                <h1 data-text="Hi I'm Subrata"></h1>
+                <a href="img/Resume.pdf" view class="btn btn1">View CV</a>
+            </div>
+            
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <!--About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/sdf.jpeg" style="height: 250px; width: 250px;">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">
+                        About Me
+                    </h1>
+                    <p>hi, I am subrata from West Bengal , currently persuing Msc Mathematics and Computing From IIT Guwahati.My 
+                    Career aspiration to become Software Engineer.My hobby is to play Cricket. 
+                    </p>
+                    <div class="tab-title">
+                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Coding Language: </span><br>C,C++,Python</li>
+                            <li><span>Data Structure and Algorithm</span><br></li>
+                            <li><span>WEB Development: Frontend:</span><br>HTML,CSS,Javascript</li>
+                            <li><span>WEB Development: Backend:</span><br>PHP</li>
+                            <li><span>Database:</span><br>SQL</li>
+                            <a href="https://cert.devtown.in/verify/ZlJP6T">Certificate 1 link</a>
+                            <br>
+                            <a href="https://cert.devtown.in/verify/ZTRsIi">Certificate 2 link</a>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023-current</span><br>Internship at Tutedude(Business and Development)</li>
+                            <li><span>Math Tutor at</span><br>Chegg</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Msc Mathematics And Computing(2021-current)</span><br>IIT Guwahati</li>
+                            <li><span>Bsc Mathematics(2018-2021) || CGPA:8.93</span><br>Cooch Behar Panchanan Barma University </li>
+                            <li><span>Higher Secondary || 84.8%</span><br>Jenkins School,Cooch Behar</li>
+                            <li><span> Secondary || 92%</span><br>Jenkins School,Cooch Behar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <!--Services-->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+            <div >
+                
+                <h2>Space Invaders</h2>
+                
+                <a href="https://github.com/SubrataIIT/SpaceInvader.github.io"><i class="fa-sharp fa-solid fa-file-code"></i> Source Code</a>
+                
+                <br>
+                <br>
+                <a href="#space" class="ar">Explore More</a>
+                
+            </div>
+            <div>
+                <h2>Instagram Clone</h2>
+                
+                <a href="https://github.com/SubrataIIT/InstagramClone"><i class="fa-sharp fa-solid fa-file-code"></i> Source Code</a>
+                
+                <br>
+                <br>
+                <a href="#insta" class="ar">Explore More</a>
+            </div>
+            <div>
+                <h2>Portfolio Website</h2>
+                <a href="https://github.com/SubrataIIT/portfolio.github.io"><i class="fa-sharp fa-solid fa-file-code"></i> Source Code</a>
+                
+                <br>
+                <br>
+                <a href="#portf" class="ar">Explore More</a>
+            </div>
+            <div>
+                <h2>Placement Portal</h2>
+                <a href="https://github.com/SubrataIIT/PlacementPortal"><i class="fa-sharp fa-solid fa-file-code"></i> Source Code</a>
+                
+                <br>
+                <br>
+                <a href="#pp" class="ar">Explore More</a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    
+    <!--Coding -->
+    <div id="code">
+        <div class="container">
+            <h1 class="sub-title">Coding Platform</h1>
+            <div class="code-list">
+                <div class="cod">
+                    
+                   <img src="img/gfg.png">
+                   <div class="lay">
+                    <h3>GFG Portal</h3>
+                  <a href="https://auth.geeksforgeeks.org/user/bhfncsf/practice"> Profile Link</a>
+                   </div>
+                    
+                </div>
+                <div class="cod">
+                    <img src="img/leetcode.jpg">
+                    <div class="lay">
+                        <h3>Leetcode</h3>
+                        <i class="fa-solid fa-square-code"></i>
+                      <a href="https://leetcode.com/SubrataRaj123/"><i class="fa-solid fa-square-code"></i>Profile Link <i class="fa-solid fa-square-code"></i></a>
+                       </div>
+                </div>
+                <div class="cod">
+                   <img src="img/codechef.jpeg">
+                   <div class="lay">
+                    <h3>Code Chef</h3>
+                  <a href="https://www.codechef.com/users/subrataraj123">Profile Link <i class="fa-solid fa-display-code"></i></a>
+                   </div>
+                </div>
+                
+            </div>
+          </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+  <!--Portfolio-->
+  <div id="portfolio">
+     <div class="container">
+        <h1 class="sub-title">Overview of Projects</h1>
+        <div class="work-list">
+        <div class="work" id="space">
+            
+              <img src="img/ret.png" style="height: 600px;">
+              <div class="layer">
+               <h2>Space Invader</h2>
+
+               <p class="tech">Tech stack : HTML,Javascript </p>
+                <p>Press 'a' to move spaceship left and 'd' to right and press spacebar to shoot</p>
+               <a href="https://o3k19w.csb.app/" style="color: aqua;"><i class="fa-solid fa-arrow-right"></i> Run Here</a>
+              </div>
+        </div>
+        <div class="work" id="insta">
+            
+            <img src="img/insta.png" style="height: 600px; ">
+            <div class="layer">
+            <h2>Instagram Clone</h2>
+            <p class="tech">Tech Stack: HTML,CSS</p>
+            <p>It's  Frontend part of Instagram Clone</p>
+            <a href="https://3lvkdn.csb.app/" style="color: aqua;"><i class="fa-solid fa-arrow-right"></i> Run Here</a>
+            </div>
+        </div>
+        <div class="work" id="portf" >
+            <img src="img/port.png" style="height: 600px;">
+            <div class="layer">
+                <h2>Portfolio Website</h2>
+                <p class="tech">Tech Stack: HTML,CSS,Javascript</p>
+                <p>Own Responsive portfolio website</p>
+                <a href="https://tltvog.csb.app/" style="color: aqua;"><i class="fa-solid fa-arrow-right"></i> Run Here</a>
+            </div>
+        </div>
+        <div class="work" id="pp">
+            <img src="img/placement.png" style="height: 600px;">
+            <div class="layer">
+                <h2 >Placement Portal</h2>
+                <p class="tech">Tech Stack: HTML,CSS,PHP</p>
+                <p class="tech">Database: SQL</p>
+               <p>To Run-> XAMPP->htdocs->Folder</p>
+            </div>
+        </div>
+        
+     </div>
+  </div>
+  <br>
+    <hr>
+    <br>
+  <!--Contact-->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+               <a href="mailto:subratadas@iitg.ac.in"><i class="fa-solid fa-envelope"></i></a>
+                <p><i class="fa-solid fa-phone"></i>8250040288</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/subrata-das-737203235/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/SubrataIIT"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/Subrata11751213"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/subratadas1317/"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="img/Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    
+              <a href="https://api.whatsapp.com/send/?phone=918250040288&text&type=phone_number&app_absent=0" class="wh"> <i class="fa-brands fa-square-whatsapp"> </i></a>
+                    
+                     <br>
+                     <br>
+                     <br>
+                     <br>
+                    
+                    <a href="https://t.me/Subrata8250040288" class="te"><i class="fa-brands fa-telegram"></i></a>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname)
+    {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tablink of tabcontents){
+            tablink.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script src="script.js"></script>
+</body>
+</html>
